@@ -18,14 +18,15 @@ const AboutMe = () => {
           <p>
           Hi all, I am Evgeny Starchenko. I am a FullStack Web Developer.
           </p>
-          <a href="https://github.com/GIN1104" target="_blank" rel="noreferrer" className="icon">
+          <a href="https://github.com/GIN1104" target="_blank" rel="noreferrer" className="icon mr-4">
             <FaGithubSquare size={40} />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="icon">
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="icon mr-4">
             <FaLinkedinIn size={40} />
           </a>
-          <a href={Resume} target="_blank" rel="noreferrer"  className="icon">
+          <a href={Resume} target="_blank" rel="noreferrer" download className="icon">
             <BsFileText size={40} />
+           Download CV
           </a>
         </div>
       </div>
