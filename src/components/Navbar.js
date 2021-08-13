@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from "../logo.png";
+import logo from "../img/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-scroll"
 
 const Navbar = () => {
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light navbar-bg">
+        <nav className="navbar navbar-expand-lg navbar-light navbar-bg fixed-top">
             <div className="container-fluid">
                 <img className="logo" src={logo} alt="logo..."/>
                 <button
@@ -23,18 +24,18 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home
+                            <Link smooth={true} to="home" offset={-50} className="nav-link"  >Home
                                 <span className="sr-only">(current)</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About me</a>
+                            <Link className="nav-link" smooth={true} to="about" offset={-50} >About me</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Portfolio</a>
+                            <Link className="nav-link" smooth={true} to="portfolio" offset={-50} >Portfolio</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contacts</a>
+                            <Link className="nav-link" smooth={true} to="contacts" offset={-85} >Contacts</Link>
                         </li>
 
                     </ul>

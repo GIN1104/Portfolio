@@ -3,14 +3,21 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255, 255, 255, 0)
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-grey: #ccd1d9;
 }
 
 body {
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 /* *******************  NAVBAR ************************* */
+
+nav {
+  z-index: 2;
+}
 
 .logo {
 width: 6.25rem;
@@ -45,4 +52,227 @@ nav ul li {
 
  .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/* *******************  HEADER ************************* */
+
+.header-wraper {
+  position: relative;
+  background: url(wallpaperflare.com_wallpaper.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+/* -------------------- TYPED TEXT ----------------------- */
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.8rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+
+/* -------------------- HEADER MAIN OFFER BUTTON ----------------------- */
+
+.btn-main-offer {
+    border: 1px solid var(--primary-red);
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--primary-white);
+    margin: 2rem;
+}
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 2ms ease-in-out;
+}
+
+/* ---------------------- PARTICLES JS   ----------------------- */
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 95h;
+    width: 100vw;
+    z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}
+
+/**************ABOUT ME****************/
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid
+}
+
+.about-heading {
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
+}
+/**************FOOTER****************/
+.footer {
+  color: var(--primary-grey);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 1rem;
+  /* padding: 1rem; */
+  font-size: 1.5rem;
+}
+.footer_email {
+  font-size: 1.3rem;
+}
+.icon  {
+  padding-bottom: 4px;
+  margin-right: 3px;
+}
+
+
+/**************PROJECTS****************/
+.project-wrapper {
+  
+  background: url("img/wood_texture.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+  
+}
+
+.project-image {
+  width: 15rem;
+  height: 8rem;
+  /* border: 1px solid; */
+  padding: 0 0.5rem;
+}
+
+.project-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  /* border: 1px solid red; */
+  cursor: pointer;
+
+}
+
+.project-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.project-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.project-image-box:hover .project-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
+
+}
+
+/**************POPUP BOX****************/
+.project-image-popupbox {
+  width: 45rem;
+  /* height: 30rem; */
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: orange;
+}
+
+.hyper-link:hover {
+  color: red;
+}
+
+@media(max-width: 768px) {
+  .project-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 600px) {
+  .popupbox-wrapper {
+    height: 100% !important;
+
+  }
+  .project-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 80% !important;
+
+  }
+  .project-image-popupbox {
+    width: 30%;
+  }
 }
