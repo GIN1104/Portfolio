@@ -207,6 +207,7 @@ nav ul li {
   top: 0;
   /* border: 1px solid red; */
   cursor: pointer;
+
 }
 
 .project-image-box:hover .overflow {

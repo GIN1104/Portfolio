@@ -16,7 +16,17 @@ const AboutMe = () => {
         <div className="col-lg-6 col-xm-12">
           <h2 className="about-heading">About Me</h2>
           <p>
-          Hi all, I am Evgeny Starchenko. I am a FullStack Web Developer.
+             Hi all, I am Evgeny Starchenko. <br/>
+          Making my career change to the High Tech field as a FullStack Web Developer. Strong interest in web application and websites.
+          <br/><br/>
+          FrontEnd Experience: HTML, CSS, Bootstrap, Material UI, JavaScript, React & Angular.
+          <br/>
+          BackEnd Experience: Node.JS, FireBase, and MySQL, MongoDB.
+          <br/><br/>
+          Git / GitHub, as well for version tool in the web development workflow.
+          <br/><br/>
+          Creative thinking and can-do attitude. Excellent communication skills in diverse environments. Meticulous attention to details. Committed to lifelong learning.
+          Willingness to work in strong collaborative team.
           </p>
           <a href="https://github.com/GIN1104" target="_blank" rel="noreferrer" className="icon mr-4">
             <FaGithubSquare size={40} />
