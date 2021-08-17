@@ -186,12 +186,12 @@ nav ul li {
   
 }
 
-.project-image {
+.project-image  {
   width: 15rem;
   height: 8rem;
-  /* border: 1px solid; */
   padding: 0 0.5rem;
 }
+
 
 .project-image-box {
   position: relative;
@@ -205,7 +205,6 @@ nav ul li {
   width: 15rem;
   height: 8rem;
   top: 0;
-  /* border: 1px solid red; */
   cursor: pointer;
 
 }

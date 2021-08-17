@@ -2,6 +2,7 @@ import React from "react";
 import Netflix from "../img/netflix.png";
 import Spotify from "../img/spotify.png";
 import Criptonite from "../img/criptonite.png"
+import LandingPage from "../img/landing-page.png"
 
 
 //FONT AWESOME IMPORT
@@ -23,11 +24,12 @@ const Projects = () => {
         />
         <p>
         Netflix Clone<br/>
-        <span style={{color: "red"}}>
+        <span >
 Fully responsive React app.
-main features:
-Frontend: Styled-components, React hooks + custom hooks ,context api, protected routes, Fuse.js for searching films and series.
-Backend: Usage of firebase auth to handle registration and authentication, firestore to store films and series data, firebase hosting.
+<br/>
+Frontend: Styled-components, React hooks + custom hooks ,context api.
+<br/>
+Backend:  Firebase hosting.
 </span>
         </p>
         <a
@@ -169,6 +171,57 @@ Backend: Usage of firebase auth to handle registration and authentication, fires
     fadeInSpeed: 500,
   };
 
+
+  //Landing Page
+  const openPopupboxLandingPage  = () => {
+    const content = (
+      <>
+        <img
+          className="project-image-popupbox"
+           src={LandingPage}
+          alt="Landing Page"
+        />
+        <p >
+        Landing Page
+        <br/>
+        <span>
+        This project was created by using: HTML, CSS.
+        </span>
+        </p>
+        <a
+           className="hyper-link"
+           target="_blank" rel="noreferrer"
+           href="https://landing-page-61da7.web.app/"
+        >
+          Demo
+        </a>
+        <br />
+        <a
+          className="hyper-link"
+          target="_blank" rel="noreferrer"
+          href="https://github.com/GIN1104/landing_page"
+        >
+          GitHub
+        </a>
+      </>
+    );
+    PopupboxManager.open({ content,
+     config: {
+        titleBar: {
+          text: "Landing Page",
+        },
+      }
+     });
+  };
+
+  const popupboxConfiLandingPage = {
+    titleBar: {
+      enable: true,
+       text: "",
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
   
 
  
@@ -214,13 +267,24 @@ Backend: Usage of firebase auth to handle registration and authentication, fires
 
           {/* - */}
 
+          <div className="project-image-box" onClick={openPopupboxLandingPage}>
+            <img 
+                className="project-image" 
+                src={LandingPage} 
+                 alt="Landing Page" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+          </div>
+
+          {/* - */}
+
           </div>
 
       </div>
       <PopupboxContainer {...popupboxConfigNetflix} />
       <PopupboxContainer {...popupboxConfigSpotify} />
-       <PopupboxContainer {...popupboxConfigCriptonite} />
-      {/* <PopupboxContainer {...popupboxConfigDogs} /> */}
+      <PopupboxContainer {...popupboxConfigCriptonite} />
+      <PopupboxContainer {...popupboxConfiLandingPage} />
       {/* <PopupboxContainer {...popupboxConfigEmpTrack} /> */}
       {/* <PopupboxContainer {...popupboxConfigWeather} /> */}
     </div>
