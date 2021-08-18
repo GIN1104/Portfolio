@@ -285,8 +285,6 @@ Backend:  Firebase hosting.
       <PopupboxContainer {...popupboxConfigSpotify} />
       <PopupboxContainer {...popupboxConfigCriptonite} />
       <PopupboxContainer {...popupboxConfiLandingPage} />
-      {/* <PopupboxContainer {...popupboxConfigEmpTrack} /> */}
-      {/* <PopupboxContainer {...popupboxConfigWeather} /> */}
     </div>
   );
 };

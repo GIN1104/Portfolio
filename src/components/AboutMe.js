@@ -14,14 +14,14 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="col-lg-6 col-xm-12">
-          <h2 className="about-heading">About Me</h2>
+          <h2 className="about-heading" style={{fontStyle: 'italic'}}>About Me</h2>
           <p>
              Hi all, I am Evgeny Starchenko. <br/>
-          Making my career change to the High Tech field as a FullStack Web Developer. Strong interest in web application and websites.
+          Making my career change to the High Tech field as a FullStack Web Developer. Strong interest in web applications and websites.
           <br/><br/>
-          FrontEnd Experience: HTML, CSS, Bootstrap, Material UI, JavaScript, React & Angular.
-          <br/>
-          BackEnd Experience: Node.JS, FireBase, and MySQL, MongoDB.
+          <span style={{textDecoration: "underline", fontStyle: 'italic'}}>Front End Experience:</span> HTML, CSS, Bootstrap, Material UI, JavaScript, React & Angular.
+          <br/><br/>
+          <span style={{textDecoration: "underline", fontStyle: 'italic'}}>BackEnd Experience:</span> Node.JS, FireBase, and MySQL, MongoDB.
           <br/><br/>
           Git / GitHub, as well for version tool in the web development workflow.
           <br/><br/>
