@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../img/logo.png";
+// import logo from "../img/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-scroll"
@@ -9,7 +9,7 @@ const Navbar = () => {
 
         <nav className="navbar navbar-expand-lg navbar-light navbar-bg fixed-top">
             <div className="container-fluid">
-                <img className="logo" src={logo} alt="logo..."/>
+                {/* <img className="logo" src={logo} alt="logo..."/> */}
                 <button
                     className="navbar-toggler"
                     type="button"
