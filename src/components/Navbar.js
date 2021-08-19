@@ -7,10 +7,10 @@ import { Link } from "react-scroll"
 const Navbar = () => {
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light navbar-bg fixed-top">
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light navbar-bg fixed-top ">
+            <div className="container-fluid ">
                 {/* <img className="logo" src={logo} alt="logo..."/> */}
-                <button
+                <button 
                     className="navbar-toggler"
                     type="button"
                     data-toggle="collapse"
@@ -18,11 +18,11 @@ const Navbar = () => {
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <FontAwesomeIcon icon={faBars} style={{color: "#fff"}}/>
+                    <FontAwesomeIcon icon={faBars} style={{color: "#fff"}} />
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ml-auto"  >
                         <li className="nav-item active">
                             <Link smooth={true} to="home" offset={-50} className="nav-link"  >Home
                                 <span className="sr-only">(current)</span>

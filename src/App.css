@@ -24,6 +24,9 @@ width: 6.25rem;
 margin-left: 0.75rem;
 }
 
+.navbar-toggler {
+  margin-left: calc(95% - 1.7em);
+}
 /* -------------------- NAV LINKS ----------------------- */
 
 nav a.nav-link {
