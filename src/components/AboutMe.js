@@ -31,7 +31,7 @@ const AboutMe = () => {
           <a href="https://github.com/GIN1104" target="_blank" rel="noreferrer" className="icon mr-4">
             <FaGithubSquare size={40} />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="icon mr-4">
+          <a href="https://www.linkedin.com/in/evgeny-starchenko-7ba9571a2/" target="_blank" rel="noreferrer" className="icon mr-4">
             <FaLinkedinIn size={40} />
           </a>
           <a href={Resume} target="_blank" rel="noreferrer" download className="icon">
