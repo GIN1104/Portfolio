@@ -1,8 +1,9 @@
 import React from "react";
-import Netflix from "../img/netflix.png";
-import Spotify from "../img/spotify.png";
-import Criptonite from "../img/criptonite.png"
-import LandingPage from "../img/landing-page.png"
+import Netflix from "../img/netflix.webp";
+import Spotify from "../img/spotify.webp";
+import Criptonite from "../img/criptonite.webp";
+import LandingPage from "../img/landing-page.webp";
+import Web_3 from "../img/web_3.0.webp";
 
 
 //FONT AWESOME IMPORT
@@ -214,7 +215,7 @@ Backend:  Firebase hosting.
      });
   };
 
-  const popupboxConfiLandingPage = {
+  const popupboxConfigLandingPage = {
     titleBar: {
       enable: true,
        text: "",
@@ -222,7 +223,59 @@ Backend:  Firebase hosting.
     fadeIn: true,
     fadeInSpeed: 500,
   };
-  
+
+  //Web_3.0
+     //Spotify
+   const openPopupboxWeb_3 = () => {
+    const content = (
+      <>
+        <img
+          className="project-image-popupbox"
+           src={Web_3}
+          alt="Web 3.0"
+        />
+        <p >
+          Web 3.0
+          <br/>
+        Frontend: React hooks, usage of the spotify api to connect to your real spotify account.
+        <br/>
+        Backend: firebase hosting.  
+        </p>
+        <a
+           className="hyper-link"
+           target="_blank" rel="noreferrer"
+           href="https://web-3-3c7c8.web.app/"
+        >
+          Demo
+        </a>
+        <br />
+        <a
+          className="hyper-link"
+          target="_blank" rel="noreferrer"
+          href="https://github.com/GIN1104/web-3.0"
+        >
+          GitHub
+        </a>
+      </>
+    );
+    PopupboxManager.open({ content,
+     config: {
+        titleBar: {
+          text: "Web 3.0",
+        },
+      }
+     });
+  };
+
+  const popupboxConfigWeb_3 = {
+    titleBar: {
+      enable: true,
+       text: "",
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
+
 
  
 
@@ -237,7 +290,7 @@ Backend:  Firebase hosting.
             <img
               className="project-image"
               src={Netflix}
-              alt="Netflix App"
+              alt="Project  Netflix App"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
@@ -245,7 +298,7 @@ Backend:  Firebase hosting.
 
                   {/* - */}
 
-                  <div className="project-image-box" onClick={openPopupboxSpotify}>
+              <div className="project-image-box" onClick={openPopupboxSpotify}>
             <img 
                 className="project-image" 
                 src={Spotify} 
@@ -277,6 +330,16 @@ Backend:  Firebase hosting.
           </div>
 
           {/* - */}
+            <div className="project-image-box" onClick={openPopupboxWeb_3}>
+            <img 
+                className="project-image" 
+                 src={Web_3} 
+                 alt="Web_3.0" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="project-icon" icon={faSearchPlus} />
+          </div>
+
+          {/* - */}
 
           </div>
 
@@ -284,7 +347,8 @@ Backend:  Firebase hosting.
       <PopupboxContainer {...popupboxConfigNetflix} />
       <PopupboxContainer {...popupboxConfigSpotify} />
       <PopupboxContainer {...popupboxConfigCriptonite} />
-      <PopupboxContainer {...popupboxConfiLandingPage} />
+      <PopupboxContainer {...popupboxConfigLandingPage} />
+      <PopupboxContainer {...popupboxConfigWeb_3} />
     </div>
   );
 };

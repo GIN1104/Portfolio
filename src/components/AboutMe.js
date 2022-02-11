@@ -1,5 +1,5 @@
 import React from "react";
-import Photo from "../img/evgeny_pic.jpeg";
+import Photo from "../img/evgeny_pic.webp";
 import Resume from "../docs/Evgeny_Starchenko CV 2021.pdf";
 import { FaGithubSquare, FaLinkedinIn } from "react-icons/fa";
 import { BsFileText } from "react-icons/bs";

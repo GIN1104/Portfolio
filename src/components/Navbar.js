@@ -7,7 +7,7 @@ import { Link } from "react-scroll"
 const Navbar = () => {
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light navbar-bg fixed-top ">
+        <nav className="navbar navbar-expand-lg navbar-light navbar-bg fixed-top">
             <div className="container-fluid ">
                 {/* <img className="logo" src={logo} alt="logo..."/> */}
                 <button 
