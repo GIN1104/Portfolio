@@ -237,9 +237,9 @@ Backend:  Firebase hosting.
         <p >
           Web 3.0
           <br/>
-        Frontend: React hooks, usage of the spotify api to connect to your real spotify account.
+        Frontend:  React.js application connected to the blockchain and pair it to  Ethereum wallet using MetaMask.
         <br/>
-        Backend: firebase hosting.  
+        Backend: Smart Contract on the Ethereum network written by using the Solidity programming language.  
         </p>
         <a
            className="hyper-link"
